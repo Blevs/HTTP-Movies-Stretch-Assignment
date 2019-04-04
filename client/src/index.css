@@ -66,12 +66,62 @@ body {
   color: white;
 }
 
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-buttons .home-button:first-child {
+  margin-right: 20px;
+}
+
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
 }
 
+.home-button a.active {
+  color: grey;
+}
+
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.movie-create {
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  margin: 1rem auto;
+  margin: 25px;
+  max-width: 800px;
+}
+
+.movie-create form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-create form input {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
+
+.movie-create form button {
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  background: green;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
 }
